@@ -1,8 +1,0 @@
-# .slather.yml
-
-coverage_service: coveralls
-xcodeproj: Houston.xcodeproj
-scheme: Houston
-binary-basename: Houston
-build-directory: ~/Library/Developer/Xcode/DerivedData
-configuration: Debug
