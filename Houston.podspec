@@ -10,7 +10,7 @@ Houston is a lightweight logger in Swift.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'RudyB' => 'hello@rudybermudez.io' }
   s.source           = { :git => 'https://github.com/RudyB/Houston.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/RudyB_'
+  s.social_media_url = 'https://twitter.com/RudyB__'
 
   s.ios.deployment_target = '8.0'
 
