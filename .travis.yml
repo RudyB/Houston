@@ -7,4 +7,4 @@ script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project Houston.xcodeproj/ -scheme Houston -destination "platform=iOS Simulator,name=iPhone 7,OS=11.0" -derivedDataPath ~/Library/Developer/Xcode/DerivedData CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -configuration Debug ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
 after_success:
-- slather
+- slather coverage --scheme Houston --binary-basename Houston --build-directory ~/Library/Developer/Xcode/DerivedData --configuration Debug Houston.xcodeproj
