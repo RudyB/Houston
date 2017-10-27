@@ -77,6 +77,21 @@ class LoggerTests: XCTestCase {
 		XCTAssertEqual(Logger.countDestinations(), 0)
 	}
 	
+	func testAsync() {
+		let testDestination = TestDestination()
+		Logger.add(destination: testDestination)
+		
+		Logger.verbose("Test",file: "Some File", function: "Some Function", line: 1)
+		
+		let expect = expectation(forNotification: Notification.Name("Asyc Test"), object: nil, handler: nil)
+		
+		wait(for: [expect], timeout: 3)
+		XCTAssertEqual(testDestination.didSendFileName, "Some File")
+		XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
+		XCTAssertEqual(testDestination.didSendLineNumber, 1)
+		XCTAssertEqual(testDestination.didSendLevel, LogLevel.verbose)
+	}
+	
 	func testVerboseLog() {
 		let testDestination = TestDestination()
 		testDestination.asynchronously = false
@@ -183,6 +198,10 @@ class LoggerTests: XCTestCase {
 			didSendFunctionName = function
 			didSendLineNumber = line
 			didSendMessage = message
+			if asynchronously {
+				NotificationCenter.default.post(Notification(name: Notification.Name("Asyc Test")))
+			}
+			
 			return super.acceptLog(level, function: function, file: file, line: line, message: message)
 		}
 

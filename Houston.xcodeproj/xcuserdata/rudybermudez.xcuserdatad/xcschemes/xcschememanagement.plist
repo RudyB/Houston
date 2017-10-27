@@ -7,12 +7,27 @@
 		<key>Example.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
-		<key>Houston.xcscheme_^#shared#^_</key>
+		<key>Houston iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+		<key>Houston macOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Houston tvOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Houston watchOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -20,17 +35,82 @@
 		<key>472215AB1FA187E50007641A</key>
 		<dict>
 			<key>primary</key>
-			<true />
+			<true/>
 		</dict>
 		<key>473FE0401FA146DC00534BB1</key>
 		<dict>
 			<key>primary</key>
-			<true />
+			<true/>
 		</dict>
 		<key>473FE0491FA146DC00534BB1</key>
 		<dict>
 			<key>primary</key>
-			<true />
+			<true/>
+		</dict>
+		<key>47797AAC1FA298FE009F0258</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>477CC7C41FA3ABA400DD663D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>477CC7CC1FA3ABA500DD663D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>477CC7E01FA3ABB500DD663D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>477CC7E81FA3ABB500DD663D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>477CC8141FA3AD5300DD663D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47D16C671FA3901D0004BAB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47D16C7E1FA390A90004BAB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47D16C901FA391010004BAB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47D16CA11FA391430004BAB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47D16CB91FA392A60004BAB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47D16CD71FA392BF0004BAB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47D16CE41FA392CC0004BAB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
