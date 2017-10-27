@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://imgur.com/4SBQYiC.png" height="400px"/>
-</p>
+![Houston](https://imgur.com/4SBQYiC.png)
 
 [![Build Status](https://travis-ci.org/RudyB/Houston.svg?branch=master)](https://travis-ci.org/RudyB/Houston)
 [![Coverage Status](https://coveralls.io/repos/github/RudyB/Houston/badge.svg?branch=master)](https://coveralls.io/github/RudyB/Houston?branch=master)
