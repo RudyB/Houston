@@ -3,6 +3,7 @@
 </p>
 
 [![Build Status](https://travis-ci.org/RudyB/Houston.svg?branch=master)](https://travis-ci.org/RudyB/Houston)
+[![Coverage Status](https://coveralls.io/repos/github/RudyB/Houston/badge.svg?branch=master)](https://coveralls.io/github/RudyB/Houston?branch=master)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Houston.svg)](https://cocoapods.org/pods/Houston)
 [![Platform](https://img.shields.io/cocoapods/p/Houston.svg?style=flat)](http://cocoadocs.org/docsets/Houston)
 [![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)](http://cocoadocs.org/docsets/Houson)
