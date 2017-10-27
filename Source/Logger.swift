@@ -140,7 +140,7 @@ open class Logger {
 	///   - file: The file where log was called
 	///   - function: The function where log was called
 	///   - line: The line number where log was called
-	fileprivate class func dispatch_log(_ level: LogLevel, file: String = #file, function: String = #function, line: Int = #line, message: @autoclosure () -> Any) {
+	class func dispatch_log(_ level: LogLevel, file: String = #file, function: String = #function, line: Int = #line, message: @autoclosure () -> Any) {
 		
 		// Iterate through all destinations
 		for dest in destinations {
