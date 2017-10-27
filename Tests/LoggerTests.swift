@@ -81,15 +81,15 @@ class LoggerTests: XCTestCase {
 		let testDestination = TestDestination()
 		Logger.add(destination: testDestination)
 		
-		Logger.verbose("Test",file: "Some File", function: "Some Function", line: 1)
+		Logger.error("Test",file: "Some File", function: "Some Function", line: 1)
 		
 		let expect = expectation(forNotification: Notification.Name("Asyc Test"), object: nil, handler: nil)
 		
-		wait(for: [expect], timeout: 3)
+		wait(for: [expect], timeout: 5)
 		XCTAssertEqual(testDestination.didSendFileName, "Some File")
 		XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
 		XCTAssertEqual(testDestination.didSendLineNumber, 1)
-		XCTAssertEqual(testDestination.didSendLevel, LogLevel.verbose)
+		XCTAssertEqual(testDestination.didSendLevel, LogLevel.error)
 	}
 	
 	func testVerboseLog() {
@@ -99,11 +99,20 @@ class LoggerTests: XCTestCase {
 		
 		Logger.verbose("Test",file: "Some File", function: "Some Function", line: 1)
 	
-		XCTAssertEqual(testDestination.didSendMessage, "Test")
-		XCTAssertEqual(testDestination.didSendFileName, "Some File")
-		XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
-		XCTAssertEqual(testDestination.didSendLineNumber, 1)
-		XCTAssertEqual(testDestination.didSendLevel, LogLevel.verbose)
+		#if DEBUG
+			XCTAssertEqual(testDestination.didSendMessage, "Test")
+			XCTAssertEqual(testDestination.didSendFileName, "Some File")
+			XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
+			XCTAssertEqual(testDestination.didSendLineNumber, 1)
+			XCTAssertEqual(testDestination.didSendLevel, LogLevel.verbose)
+		#else
+			XCTAssertNil(testDestination.didSendMessage)
+			XCTAssertNil(testDestination.didSendFileName)
+			XCTAssertNil(testDestination.didSendFunctionName)
+			XCTAssertNil(testDestination.didSendLineNumber)
+			XCTAssertNil(testDestination.didSendLevel)
+		#endif
+
 	}
 	
 	func testDebugLog() {
@@ -112,11 +121,20 @@ class LoggerTests: XCTestCase {
 		Logger.add(destination: testDestination)
 		
 		Logger.debug("Test",file: "Some File", function: "Some Function", line: 1)
-		XCTAssertEqual(testDestination.didSendMessage, "Test")
-		XCTAssertEqual(testDestination.didSendFileName, "Some File")
-		XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
-		XCTAssertEqual(testDestination.didSendLineNumber, 1)
-		XCTAssertEqual(testDestination.didSendLevel, LogLevel.debug)
+		
+		#if DEBUG
+			XCTAssertEqual(testDestination.didSendMessage, "Test")
+			XCTAssertEqual(testDestination.didSendFileName, "Some File")
+			XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
+			XCTAssertEqual(testDestination.didSendLineNumber, 1)
+			XCTAssertEqual(testDestination.didSendLevel, LogLevel.debug)
+		#else
+			XCTAssertNil(testDestination.didSendMessage)
+			XCTAssertNil(testDestination.didSendFileName)
+			XCTAssertNil(testDestination.didSendFunctionName)
+			XCTAssertNil(testDestination.didSendLineNumber)
+			XCTAssertNil(testDestination.didSendLevel)
+		#endif
 	}
 	
 	func testInfoLog() {
@@ -126,11 +144,19 @@ class LoggerTests: XCTestCase {
 		
 		Logger.info("Test",file: "Some File", function: "Some Function", line: 1)
 		
-		XCTAssertEqual(testDestination.didSendMessage, "Test")
-		XCTAssertEqual(testDestination.didSendFileName, "Some File")
-		XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
-		XCTAssertEqual(testDestination.didSendLineNumber, 1)
-		XCTAssertEqual(testDestination.didSendLevel, LogLevel.info)
+		#if DEBUG
+			XCTAssertEqual(testDestination.didSendMessage, "Test")
+			XCTAssertEqual(testDestination.didSendFileName, "Some File")
+			XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
+			XCTAssertEqual(testDestination.didSendLineNumber, 1)
+			XCTAssertEqual(testDestination.didSendLevel, LogLevel.info)
+		#else
+			XCTAssertNil(testDestination.didSendMessage)
+			XCTAssertNil(testDestination.didSendFileName)
+			XCTAssertNil(testDestination.didSendFunctionName)
+			XCTAssertNil(testDestination.didSendLineNumber)
+			XCTAssertNil(testDestination.didSendLevel)
+		#endif
 	}
 	
 	func testWarningLog() {
