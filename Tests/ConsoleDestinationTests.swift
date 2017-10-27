@@ -1,19 +1,20 @@
 //
-//  HoustonTests.swift
+//  ConsoleDestinationTests.swift
 //  HoustonTests
 //
-//  Created by Rudy Bermudez on 10/25/17.
+//  Created by Rudy Bermudez on 10/26/17.
 //  Copyright © 2017 Houston. All rights reserved.
 //
 
 import XCTest
 @testable import Houston
-
-class HoustonTests: XCTestCase {
+class ConsoleDestinationTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+		Logger.removeAllDestinations()
+		
     }
     
     override func tearDown() {
@@ -21,9 +22,16 @@ class HoustonTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAcceptLog() {
+        let baseDest = BaseDestination()
+        let consoleDest = ConsoleDestination()
+		baseDest.showDateTime = false
+        consoleDest.showDateTime = false
+        let baseOutput = baseDest.acceptLog(.verbose, function: "Function", file: "File", line: 10, message: "Should Be Equal")
+        let consoleOutput = consoleDest.acceptLog(.verbose, function: "Function", file: "File", line: 10, message: "Should Be Equal")
+
+        XCTAssertEqual(baseOutput, consoleOutput)
+
     }
     
     func testPerformanceExample() {
@@ -32,5 +40,5 @@ class HoustonTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+	
 }

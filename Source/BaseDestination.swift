@@ -88,7 +88,7 @@ open class BaseDestination: Hashable {
 	let formatter = DateFormatter()
 	
 	/// Formats the log output with the user configurable settings in `Output Format Configuration` section
-	private func formatLogOutput(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String {
+	func formatLogOutput(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String {
 		var dateComponent = ""
 		var fileName = ""
 		var functionName = ""
@@ -97,7 +97,7 @@ open class BaseDestination: Hashable {
 		var emoji = ""
 		
 		if showDateTime {
-			dateComponent = "[\(formatDate(dateFormat))]"
+			dateComponent = "[\(formatDate(dateFormat))] "
 		}
 		if showFileName {
 			fileName = fileNameOfFileWithoutFileType(file)
@@ -111,15 +111,15 @@ open class BaseDestination: Hashable {
 			functionName = function
 		}
 		if showLineNumber {
-			lineNumber = ":\(line)"
+			lineNumber = ":\(line) "
 		}
 		if showLogLevelEmoji {
-			emoji = level.emoji
+			emoji = "\(level.emoji) "
 		}
 		if showLogLevel {
 			levelDescription = level.description
 		}
-		return "\(dateComponent) \(fileName)\(functionName)\(lineNumber) \(emoji) \(levelDescription): \(message)"
+		return "\(dateComponent)\(fileName)\(functionName)\(lineNumber)\(emoji)\(levelDescription): \(message)"
 	}
 	
 	/// Format Date with user defined `dateFormat`
@@ -141,7 +141,7 @@ open class BaseDestination: Hashable {
 	}
 	
 	/// Returns the filename of a path without the file type ending
-	private func fileNameOfFileWithoutFileType(_ file: String) -> String {
+	func fileNameOfFileWithoutFileType(_ file: String) -> String {
 		let fileParts = fileNameOfFile(file).components(separatedBy: ".")
 		if let firstPart = fileParts.first {
 			return firstPart
