@@ -5,9 +5,10 @@
 [![Build Status](https://travis-ci.org/RudyB/Houston.svg?branch=master)](https://travis-ci.org/RudyB/Houston)
 [![Coverage Status](https://coveralls.io/repos/github/RudyB/Houston/badge.svg?branch=master)](https://coveralls.io/github/RudyB/Houston?branch=master)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Houston.svg)](https://cocoapods.org/pods/Houston)
-[![Platform](https://img.shields.io/cocoapods/p/Houston.svg?style=flat)](http://cocoadocs.org/docsets/Houston)
-[![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)](http://cocoadocs.org/docsets/Houson)
-[![License](https://img.shields.io/cocoapods/l/Houston.svg?style=flat)](http://cocoadocs.org/docsets/Houston)
+[![Platforms](https://img.shields.io/cocoapods/p/Houston.svg?style=flat)](https://cocoapods.org/pods/Houston)
+[![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)](https://cocoapods.org/pods/Houston)
+[![License](https://img.shields.io/cocoapods/l/Houston.svg?style=flat)](#license)
+
 
 
 
@@ -29,6 +30,7 @@ Inspired by [corey-rb](https://github.com/corey-rb)
 - [x] Log Strings & Objects
 - [x] Multiple Output Destinations
 - [x] Formatting Customization
+- [ ] iOS, watchOS, tvOS, macOS Compatability
 - [ ] Log to File
 - [ ] Log to HTTP endpoint
 - [ ] [Complete Documentation](http://cocoadocs.org/docsets/Houston)
@@ -52,7 +54,7 @@ Coming Soon.
 ### Swift Package Manager
 Coming Soon.
 
-
+<a name="usage"></a>
 ## Basic Usage (Quick Start)
 
 In each source file,
