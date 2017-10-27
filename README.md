@@ -1,4 +1,4 @@
-![Houston](https://imgur.com/WktVKNv.png)
+![Houston](https://imgur.com/xwOxiat.png)
 
 [![Build Status](https://travis-ci.org/RudyB/Houston.svg?branch=master)](https://travis-ci.org/RudyB/Houston)
 [![Coverage Status](https://coveralls.io/repos/github/RudyB/Houston/badge.svg?branch=master)](https://coveralls.io/github/RudyB/Houston?branch=master)
