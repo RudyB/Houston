@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "477CC8321FA3B99400DD663D"
-               BuildableName = "Houston.framework"
-               BlueprintName = "Houston macOS"
+               BlueprintIdentifier = "472215931FA15DC10007641A"
+               BuildableName = "Example.app"
+               BlueprintName = "Example"
                ReferencedContainer = "container:Houston.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,23 +29,13 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "477CC83A1FA3B99500DD663D"
-               BuildableName = "Houston macOSTests.xctest"
-               BlueprintName = "Houston macOSTests"
-               ReferencedContainer = "container:Houston.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "477CC8321FA3B99400DD663D"
-            BuildableName = "Houston.framework"
-            BlueprintName = "Houston macOS"
+            BlueprintIdentifier = "472215931FA15DC10007641A"
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
             ReferencedContainer = "container:Houston.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,15 +53,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "477CC8321FA3B99400DD663D"
-            BuildableName = "Houston.framework"
-            BlueprintName = "Houston macOS"
+            BlueprintIdentifier = "472215931FA15DC10007641A"
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
             ReferencedContainer = "container:Houston.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -81,15 +72,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "477CC8321FA3B99400DD663D"
-            BuildableName = "Houston.framework"
-            BlueprintName = "Houston macOS"
+            BlueprintIdentifier = "472215931FA15DC10007641A"
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
             ReferencedContainer = "container:Houston.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

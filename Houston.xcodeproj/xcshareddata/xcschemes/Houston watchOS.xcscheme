@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "477CC8321FA3B99400DD663D"
+               BlueprintIdentifier = "47D16CCA1FA392B40004BAB6"
                BuildableName = "Houston.framework"
-               BlueprintName = "Houston macOS"
+               BlueprintName = "Houston watchOS"
                ReferencedContainer = "container:Houston.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,26 +29,7 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "477CC83A1FA3B99500DD663D"
-               BuildableName = "Houston macOSTests.xctest"
-               BlueprintName = "Houston macOSTests"
-               ReferencedContainer = "container:Houston.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "477CC8321FA3B99400DD663D"
-            BuildableName = "Houston.framework"
-            BlueprintName = "Houston macOS"
-            ReferencedContainer = "container:Houston.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -66,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "477CC8321FA3B99400DD663D"
+            BlueprintIdentifier = "47D16CCA1FA392B40004BAB6"
             BuildableName = "Houston.framework"
-            BlueprintName = "Houston macOS"
+            BlueprintName = "Houston watchOS"
             ReferencedContainer = "container:Houston.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "477CC8321FA3B99400DD663D"
+            BlueprintIdentifier = "47D16CCA1FA392B40004BAB6"
             BuildableName = "Houston.framework"
-            BlueprintName = "Houston macOS"
+            BlueprintName = "Houston watchOS"
             ReferencedContainer = "container:Houston.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
