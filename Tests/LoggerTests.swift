@@ -85,7 +85,7 @@ class LoggerTests: XCTestCase {
 		
 		let expect = expectation(forNotification: Notification.Name("Asyc Test"), object: nil, handler: nil)
 		
-		wait(for: [expect], timeout: 5)
+		wait(for: [expect], timeout: 10)
 		XCTAssertEqual(testDestination.didSendFileName, "Some File")
 		XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
 		XCTAssertEqual(testDestination.didSendLineNumber, 1)
