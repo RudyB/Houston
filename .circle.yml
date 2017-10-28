@@ -1,4 +1,5 @@
 machine:
+override:
   xcode:
     version: 9.0.1
   environment:
