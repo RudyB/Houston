@@ -29,4 +29,4 @@ test:
     - xcodebuild -project "$PROJECT" -scheme "$EXAMPLE_SCHEME" -destination "$IOS_DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty;
     - pod lib lint
   post:
-    - slather coverage --coveralls --scheme "$IOS_FRAMEWORK_SCHEME" --binary-basename Houston --build-directory ~/Library/Developer/Xcode/DerivedData --configuration Debug "$PROJECT";
+    - slather coverage --circleci --coveralls --scheme "$IOS_FRAMEWORK_SCHEME" --binary-basename Houston --build-directory ~/Library/Developer/Xcode/DerivedData --configuration Debug "$PROJECT";
