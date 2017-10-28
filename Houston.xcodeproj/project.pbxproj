@@ -49,13 +49,6 @@
 			remoteGlobalIDString = 477CC7C41FA3ABA400DD663D;
 			remoteInfo = "Houston tvOS";
 		};
-		477CC81B1FA3AD5300DD663D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 473FE0381FA146DC00534BB1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 47D16CB91FA392A60004BAB6;
-			remoteInfo = "Houston iOS";
-		};
 		477CC83D1FA3B99500DD663D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 473FE0381FA146DC00534BB1 /* Project object */;
@@ -64,6 +57,13 @@
 			remoteInfo = "Houston macOS";
 		};
 		47D16CBF1FA392A60004BAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 473FE0381FA146DC00534BB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D16CB91FA392A60004BAB6;
+			remoteInfo = "Houston iOS";
+		};
+		47EF2B531FA4E8140085D51E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 473FE0381FA146DC00534BB1 /* Project object */;
 			proxyType = 1;
@@ -367,7 +367,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				477CC81C1FA3AD5300DD663D /* PBXTargetDependency */,
+				47EF2B541FA4E8140085D51E /* PBXTargetDependency */,
 			);
 			name = "Houston iOSTests";
 			productName = "Houston iOSTests";
@@ -662,11 +662,6 @@
 			target = 477CC7C41FA3ABA400DD663D /* Houston tvOS */;
 			targetProxy = 477CC7CF1FA3ABA500DD663D /* PBXContainerItemProxy */;
 		};
-		477CC81C1FA3AD5300DD663D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 47D16CB91FA392A60004BAB6 /* Houston iOS */;
-			targetProxy = 477CC81B1FA3AD5300DD663D /* PBXContainerItemProxy */;
-		};
 		477CC83E1FA3B99500DD663D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 477CC8321FA3B99400DD663D /* Houston macOS */;
@@ -676,6 +671,11 @@
 			isa = PBXTargetDependency;
 			target = 47D16CB91FA392A60004BAB6 /* Houston iOS */;
 			targetProxy = 47D16CBF1FA392A60004BAB6 /* PBXContainerItemProxy */;
+		};
+		47EF2B541FA4E8140085D51E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47D16CB91FA392A60004BAB6 /* Houston iOS */;
+			targetProxy = 47EF2B531FA4E8140085D51E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
