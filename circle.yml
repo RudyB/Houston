@@ -8,6 +8,9 @@ machine:
     TVOS_FRAMEWORK_SCHEME: "Houston tvOS"
     WATCHOS_FRAMEWORK_SCHEME: "Houston watchOS"
     EXAMPLE_SCHEME: "Example"
+    IOS_DESTINATION: "platform=iOS Simulator,name=iPhone 7,OS=11.0.1"
+    TVOS_DESTINATION: "OS=11.0,name=Apple TV 1080p"
+    WATCHOS_DESTINATION: "OS=4.0,name=Apple Watch - 42mm"
     
 dependencies:
   pre:
@@ -15,15 +18,15 @@ dependencies:
     - gem install slather
 test:
   override:
-    - xcodebuild -project "$PROJECT" -scheme "$IOS_FRAMEWORK_SCHEME" -destination "platform=iOS Simulator,name=iPhone 7,OS=11.0.1" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES -enableCodeCoverage YES test | xcpretty;
-    - xcodebuild -project "$PROJECT" -scheme "$IOS_FRAMEWORK_SCHEME" -destination "platform=iOS Simulator,name=iPhone 7,OS=11.0.1" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES -enableCodeCoverage NO test | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$IOS_FRAMEWORK_SCHEME" -destination "$IOS_DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES -enableCodeCoverage YES test | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$IOS_FRAMEWORK_SCHEME" -destination "$IOS_DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES -enableCodeCoverage NO test | xcpretty;
     - xcodebuild -project "$PROJECT" -scheme "$MACOS_FRAMEWORK_SCHEME" -destination "arch=x86_64" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES  test | xcpretty;
     - xcodebuild -project "$PROJECT" -scheme "$MACOS_FRAMEWORK_SCHEME" -destination "arch=x86_64" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES  test | xcpretty;
-    - xcodebuild -project "$PROJECT" -scheme "$MACOS_FRAMEWORK_SCHEME" -destination "OS=11.0,name=Apple TV 1080p" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES  test | xcpretty;
-    - xcodebuild -project "$PROJECT" -scheme "$MACOS_FRAMEWORK_SCHEME" -destination "OS=11.0,name=Apple TV 1080p" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES  test | xcpretty;
-    - xcodebuild -project "$PROJECT" -scheme "$WATCHOS_FRAMEWORK_SCHEME" -destination "OS=4.0,name=Apple Watch - 42mm" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty;
-    - xcodebuild -project "$PROJECT" -scheme "$WATCHOS_FRAMEWORK_SCHEME" -destination "OS=4.0,name=Apple Watch - 42mm" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty;
-    - xcodebuild -project "$PROJECT" -scheme "$EXAMPLE_SCHEME" -destination "platform=iOS Simulator,name=iPhone 7,OS=11.0.1" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$TVOS_FRAMEWORK_SCHEME" -destination "$TVOS_DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES  test | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$TVOS_FRAMEWORK_SCHEME" -destination "$TVOS_DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES  test | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$WATCHOS_FRAMEWORK_SCHEME" -destination "$WATCHOS_DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$WATCHOS_FRAMEWORK_SCHEME" -destination "$WATCHOS_DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$EXAMPLE_SCHEME" -destination "$IOS_DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty;
     - pod lib lint
   post:
-    - bundle exec slather coverage --coveralls --scheme "$IOS_FRAMEWORK_SCHEME" --binary-basename Houston --build-directory ~/Library/Developer/Xcode/DerivedData --configuration Debug "$PROJECT";
+    - slather coverage --coveralls --scheme "$IOS_FRAMEWORK_SCHEME" --binary-basename Houston --build-directory ~/Library/Developer/Xcode/DerivedData --configuration Debug "$PROJECT";
