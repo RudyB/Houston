@@ -20,4 +20,4 @@ test:
   override:
     - xcodebuild -project "$PROJECT" -scheme "$IOS_FRAMEWORK_SCHEME" -destination "$IOS_DESTINATION" -configuration Debug -derivedDataPath ~/Library/Developer/Xcode/DerivedData ONLY_ACTIVE_ARCH=YES ENABLE_TESTABILITY=YES -enableCodeCoverage YES test | xcpretty;
   post:
-    - slather coverage --circleci --coveralls --scheme "$IOS_FRAMEWORK_SCHEME" --build-directory ~/Library/Developer/Xcode/DerivedData --configuration Debug "$PROJECT";
+   - slather coverage --circleci --coveralls --scheme "$IOS_FRAMEWORK_SCHEME" --build-directory ~/Library/Developer/Xcode/DerivedData --configuration Debug "$PROJECT"
