@@ -1,0 +1,32 @@
+machine:
+  xcode:
+    version: 9.0.1
+  environment:
+    PROJECT: Houston.xcodeproj
+    IOS_FRAMEWORK_SCHEME: "Houston iOS"
+    MACOS_FRAMEWORK_SCHEME: "Houston macOS"
+    TVOS_FRAMEWORK_SCHEME: "Houston tvOS"
+    WATCHOS_FRAMEWORK_SCHEME: "Houston watchOS"
+    EXAMPLE_SCHEME: "Example"
+    IOS_DESTINATION: "platform=iOS Simulator,name=iPhone 7,OS=11.0.1"
+    TVOS_DESTINATION: "OS=11.0,name=Apple TV 1080p"
+    WATCHOS_DESTINATION: "OS=4.0,name=Apple Watch - 42mm"
+    
+dependencies:
+  pre:
+    - gem install cocoapods --quiet
+    - gem install slather
+test:
+  override:
+    - xcodebuild -project "$PROJECT" -scheme "$IOS_FRAMEWORK_SCHEME" -destination "$IOS_DESTINATION" -configuration Debug -derivedDataPath ~/Library/Developer/Xcode/DerivedData ONLY_ACTIVE_ARCH=YES ENABLE_TESTABILITY=YES -enableCodeCoverage YES test | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$IOS_FRAMEWORK_SCHEME" -destination "$IOS_DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES -enableCodeCoverage NO test | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$MACOS_FRAMEWORK_SCHEME" -destination "arch=x86_64" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES  test | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$MACOS_FRAMEWORK_SCHEME" -destination "arch=x86_64" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES  test | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$TVOS_FRAMEWORK_SCHEME" -destination "$TVOS_DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES  test | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$TVOS_FRAMEWORK_SCHEME" -destination "$TVOS_DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES  test | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$WATCHOS_FRAMEWORK_SCHEME" -destination "$WATCHOS_DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$WATCHOS_FRAMEWORK_SCHEME" -destination "$WATCHOS_DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty;
+    - xcodebuild -project "$PROJECT" -scheme "$EXAMPLE_SCHEME" -destination "$IOS_DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty;
+    - pod lib lint
+  post:
+   - slather coverage --circleci --coveralls --scheme "$IOS_FRAMEWORK_SCHEME" --build-directory ~/Library/Developer/Xcode/DerivedData --configuration Debug "$PROJECT"

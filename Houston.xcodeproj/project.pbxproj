@@ -12,27 +12,79 @@
 		4722159C1FA15DC10007641A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4722159A1FA15DC10007641A /* Main.storyboard */; };
 		4722159E1FA15DC10007641A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4722159D1FA15DC10007641A /* Assets.xcassets */; };
 		472215A11FA15DC10007641A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4722159F1FA15DC10007641A /* LaunchScreen.storyboard */; };
-		472215A71FA15FE30007641A /* Houston.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473FE0411FA146DC00534BB1 /* Houston.framework */; };
-		473FE07F1FA1494100534BB1 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FE0791FA1494100534BB1 /* LogLevel.swift */; };
-		473FE0831FA1494100534BB1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FE07D1FA1494100534BB1 /* Logger.swift */; };
-		4764311C1FA2B03E00818CC3 /* ConsoleDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4764311B1FA2B03E00818CC3 /* ConsoleDestinationTests.swift */; };
-		47797AB21FA298FE009F0258 /* Houston.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473FE0411FA146DC00534BB1 /* Houston.framework */; };
-		47797ABC1FA299D5009F0258 /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47797AB81FA2995A009F0258 /* LoggerTests.swift */; };
-		47797ABD1FA299DE009F0258 /* BaseDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47797ABA1FA29964009F0258 /* BaseDestinationTests.swift */; };
-		47C047C31FA15AA800225F93 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C047BF1FA15AA800225F93 /* ConsoleDestination.swift */; };
-		47C047C51FA15AA800225F93 /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C047C11FA15AA800225F93 /* BaseDestination.swift */; };
-		47C047C61FA15AA800225F93 /* Houston.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C047C21FA15AA800225F93 /* Houston.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		477CC7CE1FA3ABA500DD663D /* Houston.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CC7C51FA3ABA400DD663D /* Houston.framework */; };
+		477CC7F81FA3AC2900DD663D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FE07D1FA1494100534BB1 /* Logger.swift */; };
+		477CC7FA1FA3AC2D00DD663D /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FE0791FA1494100534BB1 /* LogLevel.swift */; };
+		477CC7FC1FA3AC3000DD663D /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C047C11FA15AA800225F93 /* BaseDestination.swift */; };
+		477CC7FF1FA3AC3400DD663D /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C047BF1FA15AA800225F93 /* ConsoleDestination.swift */; };
+		477CC81A1FA3AD5300DD663D /* Houston.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D16CBA1FA392A60004BAB6 /* Houston.framework */; };
+		477CC8211FA3ADBF00DD663D /* Houston.h in Headers */ = {isa = PBXBuildFile; fileRef = 477CC8201FA3ADBB00DD663D /* Houston.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		477CC8221FA3ADC200DD663D /* Houston.h in Headers */ = {isa = PBXBuildFile; fileRef = 477CC8201FA3ADBB00DD663D /* Houston.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		477CC8231FA3ADC500DD663D /* Houston.h in Headers */ = {isa = PBXBuildFile; fileRef = 477CC8201FA3ADBB00DD663D /* Houston.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		477CC8251FA3ADD700DD663D /* BaseDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47797ABA1FA29964009F0258 /* BaseDestinationTests.swift */; };
+		477CC8261FA3ADD800DD663D /* BaseDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47797ABA1FA29964009F0258 /* BaseDestinationTests.swift */; };
+		477CC8281FA3ADDB00DD663D /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47797AB81FA2995A009F0258 /* LoggerTests.swift */; };
+		477CC8291FA3ADDC00DD663D /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47797AB81FA2995A009F0258 /* LoggerTests.swift */; };
+		477CC82B1FA3ADE000DD663D /* ConsoleDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4764311B1FA2B03E00818CC3 /* ConsoleDestinationTests.swift */; };
+		477CC82C1FA3ADE100DD663D /* ConsoleDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4764311B1FA2B03E00818CC3 /* ConsoleDestinationTests.swift */; };
+		477CC83C1FA3B99500DD663D /* Houston.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CC8331FA3B99400DD663D /* Houston.framework */; };
+		477CC84A1FA3BA1200DD663D /* Houston.h in Headers */ = {isa = PBXBuildFile; fileRef = 477CC8201FA3ADBB00DD663D /* Houston.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47D16CC11FA392A60004BAB6 /* Houston.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D16CBA1FA392A60004BAB6 /* Houston.framework */; };
+		47D16CC21FA392A60004BAB6 /* Houston.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 47D16CBA1FA392A60004BAB6 /* Houston.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		47D16CED1FA393080004BAB6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FE07D1FA1494100534BB1 /* Logger.swift */; };
+		47D16CEE1FA393090004BAB6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FE07D1FA1494100534BB1 /* Logger.swift */; };
+		47D16CF11FA3930E0004BAB6 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FE0791FA1494100534BB1 /* LogLevel.swift */; };
+		47D16CF21FA3930E0004BAB6 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FE0791FA1494100534BB1 /* LogLevel.swift */; };
+		47D16CF51FA393130004BAB6 /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C047C11FA15AA800225F93 /* BaseDestination.swift */; };
+		47D16CF61FA393130004BAB6 /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C047C11FA15AA800225F93 /* BaseDestination.swift */; };
+		47D16CF91FA393170004BAB6 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C047BF1FA15AA800225F93 /* ConsoleDestination.swift */; };
+		47D16CFA1FA393180004BAB6 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C047BF1FA15AA800225F93 /* ConsoleDestination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		47797AB31FA298FE009F0258 /* PBXContainerItemProxy */ = {
+		477CC7CF1FA3ABA500DD663D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 473FE0381FA146DC00534BB1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 473FE0401FA146DC00534BB1;
-			remoteInfo = Houston;
+			remoteGlobalIDString = 477CC7C41FA3ABA400DD663D;
+			remoteInfo = "Houston tvOS";
+		};
+		477CC83D1FA3B99500DD663D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 473FE0381FA146DC00534BB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 477CC8321FA3B99400DD663D;
+			remoteInfo = "Houston macOS";
+		};
+		47D16CBF1FA392A60004BAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 473FE0381FA146DC00534BB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D16CB91FA392A60004BAB6;
+			remoteInfo = "Houston iOS";
+		};
+		47EF2B531FA4E8140085D51E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 473FE0381FA146DC00534BB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D16CB91FA392A60004BAB6;
+			remoteInfo = "Houston iOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		47D16C741FA3901D0004BAB6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				47D16CC21FA392A60004BAB6 /* Houston.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		472215941FA15DC10007641A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,18 +94,23 @@
 		4722159D1FA15DC10007641A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472215A01FA15DC10007641A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		472215A21FA15DC10007641A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		473FE0411FA146DC00534BB1 /* Houston.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Houston.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		473FE0701FA1489000534BB1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473FE0791FA1494100534BB1 /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 		473FE07D1FA1494100534BB1 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		4764311B1FA2B03E00818CC3 /* ConsoleDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleDestinationTests.swift; sourceTree = "<group>"; };
-		47797AAD1FA298FE009F0258 /* HoustonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoustonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47797AB81FA2995A009F0258 /* LoggerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerTests.swift; sourceTree = "<group>"; };
 		47797ABA1FA29964009F0258 /* BaseDestinationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDestinationTests.swift; sourceTree = "<group>"; };
+		477CC7C51FA3ABA400DD663D /* Houston.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Houston.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		477CC7CD1FA3ABA500DD663D /* Houston tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Houston tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		477CC8151FA3AD5300DD663D /* Houston iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Houston iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		477CC8201FA3ADBB00DD663D /* Houston.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Houston.h; sourceTree = "<group>"; };
+		477CC8331FA3B99400DD663D /* Houston.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Houston.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		477CC83B1FA3B99500DD663D /* Houston macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Houston macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C047BF1FA15AA800225F93 /* ConsoleDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleDestination.swift; sourceTree = "<group>"; };
 		47C047C01FA15AA800225F93 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47C047C11FA15AA800225F93 /* BaseDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDestination.swift; sourceTree = "<group>"; };
-		47C047C21FA15AA800225F93 /* Houston.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Houston.h; sourceTree = "<group>"; };
+		47D16CBA1FA392A60004BAB6 /* Houston.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Houston.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D16CCB1FA392B40004BAB6 /* Houston.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Houston.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,22 +118,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				472215A71FA15FE30007641A /* Houston.framework in Frameworks */,
+				47D16CC11FA392A60004BAB6 /* Houston.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		473FE03D1FA146DC00534BB1 /* Frameworks */ = {
+		477CC7C11FA3ABA400DD663D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47797AAA1FA298FE009F0258 /* Frameworks */ = {
+		477CC7CA1FA3ABA500DD663D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47797AB21FA298FE009F0258 /* Houston.framework in Frameworks */,
+				477CC7CE1FA3ABA500DD663D /* Houston.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CC8121FA3AD5300DD663D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477CC81A1FA3AD5300DD663D /* Houston.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CC82F1FA3B99400DD663D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CC8381FA3B99500DD663D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477CC83C1FA3B99500DD663D /* Houston.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D16CB61FA392A60004BAB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D16CC71FA392B40004BAB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,9 +211,14 @@
 		473FE0421FA146DC00534BB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				473FE0411FA146DC00534BB1 /* Houston.framework */,
 				472215941FA15DC10007641A /* Example.app */,
-				47797AAD1FA298FE009F0258 /* HoustonTests.xctest */,
+				47D16CBA1FA392A60004BAB6 /* Houston.framework */,
+				47D16CCB1FA392B40004BAB6 /* Houston.framework */,
+				477CC7C51FA3ABA400DD663D /* Houston.framework */,
+				477CC7CD1FA3ABA500DD663D /* Houston tvOSTests.xctest */,
+				477CC8151FA3AD5300DD663D /* Houston iOSTests.xctest */,
+				477CC8331FA3B99400DD663D /* Houston.framework */,
+				477CC83B1FA3B99500DD663D /* Houston macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,7 +248,7 @@
 		47C047C71FA15AB000225F93 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				47C047C21FA15AA800225F93 /* Houston.h */,
+				477CC8201FA3ADBB00DD663D /* Houston.h */,
 				47C047C01FA15AA800225F93 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -167,11 +266,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		473FE03E1FA146DC00534BB1 /* Headers */ = {
+		477CC7C21FA3ABA400DD663D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47C047C61FA15AA800225F93 /* Houston.h in Headers */,
+				477CC8231FA3ADC500DD663D /* Houston.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CC8301FA3B99400DD663D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477CC84A1FA3BA1200DD663D /* Houston.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D16CB71FA392A60004BAB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477CC8211FA3ADBF00DD663D /* Houston.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D16CC81FA392B40004BAB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477CC8221FA3ADC200DD663D /* Houston.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,51 +308,143 @@
 				472215901FA15DC10007641A /* Sources */,
 				472215911FA15DC10007641A /* Frameworks */,
 				472215921FA15DC10007641A /* Resources */,
+				47D16C741FA3901D0004BAB6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				47D16CC01FA392A60004BAB6 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
 			productReference = 472215941FA15DC10007641A /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		473FE0401FA146DC00534BB1 /* Houston */ = {
+		477CC7C41FA3ABA400DD663D /* Houston tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 473FE0551FA146DC00534BB1 /* Build configuration list for PBXNativeTarget "Houston" */;
+			buildConfigurationList = 477CC7D61FA3ABA500DD663D /* Build configuration list for PBXNativeTarget "Houston tvOS" */;
 			buildPhases = (
-				473FE03C1FA146DC00534BB1 /* Sources */,
-				473FE03D1FA146DC00534BB1 /* Frameworks */,
-				473FE03E1FA146DC00534BB1 /* Headers */,
-				473FE03F1FA146DC00534BB1 /* Resources */,
+				477CC7C01FA3ABA400DD663D /* Sources */,
+				477CC7C11FA3ABA400DD663D /* Frameworks */,
+				477CC7C21FA3ABA400DD663D /* Headers */,
+				477CC7C31FA3ABA400DD663D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Houston;
-			productName = Houston;
-			productReference = 473FE0411FA146DC00534BB1 /* Houston.framework */;
+			name = "Houston tvOS";
+			productName = "Houston tvOS";
+			productReference = 477CC7C51FA3ABA400DD663D /* Houston.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		47797AAC1FA298FE009F0258 /* HoustonTests */ = {
+		477CC7CC1FA3ABA500DD663D /* Houston tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47797AB51FA298FE009F0258 /* Build configuration list for PBXNativeTarget "HoustonTests" */;
+			buildConfigurationList = 477CC7D91FA3ABA500DD663D /* Build configuration list for PBXNativeTarget "Houston tvOSTests" */;
 			buildPhases = (
-				47797AA91FA298FE009F0258 /* Sources */,
-				47797AAA1FA298FE009F0258 /* Frameworks */,
-				47797AAB1FA298FE009F0258 /* Resources */,
+				477CC7C91FA3ABA500DD663D /* Sources */,
+				477CC7CA1FA3ABA500DD663D /* Frameworks */,
+				477CC7CB1FA3ABA500DD663D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				47797AB41FA298FE009F0258 /* PBXTargetDependency */,
+				477CC7D01FA3ABA500DD663D /* PBXTargetDependency */,
 			);
-			name = HoustonTests;
-			productName = HoustonTests;
-			productReference = 47797AAD1FA298FE009F0258 /* HoustonTests.xctest */;
+			name = "Houston tvOSTests";
+			productName = "Houston tvOSTests";
+			productReference = 477CC7CD1FA3ABA500DD663D /* Houston tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		477CC8141FA3AD5300DD663D /* Houston iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 477CC81D1FA3AD5300DD663D /* Build configuration list for PBXNativeTarget "Houston iOSTests" */;
+			buildPhases = (
+				477CC8111FA3AD5300DD663D /* Sources */,
+				477CC8121FA3AD5300DD663D /* Frameworks */,
+				477CC8131FA3AD5300DD663D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47EF2B541FA4E8140085D51E /* PBXTargetDependency */,
+			);
+			name = "Houston iOSTests";
+			productName = "Houston iOSTests";
+			productReference = 477CC8151FA3AD5300DD663D /* Houston iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		477CC8321FA3B99400DD663D /* Houston macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 477CC8441FA3B99500DD663D /* Build configuration list for PBXNativeTarget "Houston macOS" */;
+			buildPhases = (
+				477CC82E1FA3B99400DD663D /* Sources */,
+				477CC82F1FA3B99400DD663D /* Frameworks */,
+				477CC8301FA3B99400DD663D /* Headers */,
+				477CC8311FA3B99400DD663D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Houston macOS";
+			productName = "Houston macOS";
+			productReference = 477CC8331FA3B99400DD663D /* Houston.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		477CC83A1FA3B99500DD663D /* Houston macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 477CC8471FA3B99500DD663D /* Build configuration list for PBXNativeTarget "Houston macOSTests" */;
+			buildPhases = (
+				477CC8371FA3B99500DD663D /* Sources */,
+				477CC8381FA3B99500DD663D /* Frameworks */,
+				477CC8391FA3B99500DD663D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				477CC83E1FA3B99500DD663D /* PBXTargetDependency */,
+			);
+			name = "Houston macOSTests";
+			productName = "Houston macOSTests";
+			productReference = 477CC83B1FA3B99500DD663D /* Houston macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47D16CB91FA392A60004BAB6 /* Houston iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D16CC31FA392A60004BAB6 /* Build configuration list for PBXNativeTarget "Houston iOS" */;
+			buildPhases = (
+				47D16CB51FA392A60004BAB6 /* Sources */,
+				47D16CB61FA392A60004BAB6 /* Frameworks */,
+				47D16CB71FA392A60004BAB6 /* Headers */,
+				47D16CB81FA392A60004BAB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Houston iOS";
+			productName = "Houston iOS";
+			productReference = 47D16CBA1FA392A60004BAB6 /* Houston.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		47D16CCA1FA392B40004BAB6 /* Houston watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D16CD01FA392B40004BAB6 /* Build configuration list for PBXNativeTarget "Houston watchOS" */;
+			buildPhases = (
+				47D16CC61FA392B40004BAB6 /* Sources */,
+				47D16CC71FA392B40004BAB6 /* Frameworks */,
+				47D16CC81FA392B40004BAB6 /* Headers */,
+				47D16CC91FA392B40004BAB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Houston watchOS";
+			productName = "Houston watchOS";
+			productReference = 47D16CCB1FA392B40004BAB6 /* Houston.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -245,12 +460,31 @@
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
-					473FE0401FA146DC00534BB1 = {
+					477CC7C41FA3ABA400DD663D = {
 						CreatedOnToolsVersion = 9.0.1;
-						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
-					47797AAC1FA298FE009F0258 = {
+					477CC7CC1FA3ABA500DD663D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					477CC8141FA3AD5300DD663D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					477CC8321FA3B99400DD663D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					477CC83A1FA3B99500DD663D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					47D16CB91FA392A60004BAB6 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					47D16CCA1FA392B40004BAB6 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -269,9 +503,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				473FE0401FA146DC00534BB1 /* Houston */,
 				472215931FA15DC10007641A /* Example */,
-				47797AAC1FA298FE009F0258 /* HoustonTests */,
+				47D16CB91FA392A60004BAB6 /* Houston iOS */,
+				477CC8141FA3AD5300DD663D /* Houston iOSTests */,
+				47D16CCA1FA392B40004BAB6 /* Houston watchOS */,
+				477CC7C41FA3ABA400DD663D /* Houston tvOS */,
+				477CC7CC1FA3ABA500DD663D /* Houston tvOSTests */,
+				477CC8321FA3B99400DD663D /* Houston macOS */,
+				477CC83A1FA3B99500DD663D /* Houston macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,14 +526,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		473FE03F1FA146DC00534BB1 /* Resources */ = {
+		477CC7C31FA3ABA400DD663D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47797AAB1FA298FE009F0258 /* Resources */ = {
+		477CC7CB1FA3ABA500DD663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CC8131FA3AD5300DD663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CC8311FA3B99400DD663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CC8391FA3B99500DD663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D16CB81FA392A60004BAB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D16CC91FA392B40004BAB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,34 +587,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		473FE03C1FA146DC00534BB1 /* Sources */ = {
+		477CC7C01FA3ABA400DD663D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47C047C31FA15AA800225F93 /* ConsoleDestination.swift in Sources */,
-				47C047C51FA15AA800225F93 /* BaseDestination.swift in Sources */,
-				473FE0831FA1494100534BB1 /* Logger.swift in Sources */,
-				473FE07F1FA1494100534BB1 /* LogLevel.swift in Sources */,
+				477CC7FF1FA3AC3400DD663D /* ConsoleDestination.swift in Sources */,
+				477CC7F81FA3AC2900DD663D /* Logger.swift in Sources */,
+				477CC7FA1FA3AC2D00DD663D /* LogLevel.swift in Sources */,
+				477CC7FC1FA3AC3000DD663D /* BaseDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47797AA91FA298FE009F0258 /* Sources */ = {
+		477CC7C91FA3ABA500DD663D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4764311C1FA2B03E00818CC3 /* ConsoleDestinationTests.swift in Sources */,
-				47797ABC1FA299D5009F0258 /* LoggerTests.swift in Sources */,
-				47797ABD1FA299DE009F0258 /* BaseDestinationTests.swift in Sources */,
+				477CC82C1FA3ADE100DD663D /* ConsoleDestinationTests.swift in Sources */,
+				477CC8291FA3ADDC00DD663D /* LoggerTests.swift in Sources */,
+				477CC8261FA3ADD800DD663D /* BaseDestinationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CC8111FA3AD5300DD663D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477CC82B1FA3ADE000DD663D /* ConsoleDestinationTests.swift in Sources */,
+				477CC8281FA3ADDB00DD663D /* LoggerTests.swift in Sources */,
+				477CC8251FA3ADD700DD663D /* BaseDestinationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CC82E1FA3B99400DD663D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CC8371FA3B99500DD663D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D16CB51FA392A60004BAB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D16CF91FA393170004BAB6 /* ConsoleDestination.swift in Sources */,
+				47D16CED1FA393080004BAB6 /* Logger.swift in Sources */,
+				47D16CF11FA3930E0004BAB6 /* LogLevel.swift in Sources */,
+				47D16CF51FA393130004BAB6 /* BaseDestination.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D16CC61FA392B40004BAB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D16CFA1FA393180004BAB6 /* ConsoleDestination.swift in Sources */,
+				47D16CEE1FA393090004BAB6 /* Logger.swift in Sources */,
+				47D16CF21FA3930E0004BAB6 /* LogLevel.swift in Sources */,
+				47D16CF61FA393130004BAB6 /* BaseDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		47797AB41FA298FE009F0258 /* PBXTargetDependency */ = {
+		477CC7D01FA3ABA500DD663D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 473FE0401FA146DC00534BB1 /* Houston */;
-			targetProxy = 47797AB31FA298FE009F0258 /* PBXContainerItemProxy */;
+			target = 477CC7C41FA3ABA400DD663D /* Houston tvOS */;
+			targetProxy = 477CC7CF1FA3ABA500DD663D /* PBXContainerItemProxy */;
+		};
+		477CC83E1FA3B99500DD663D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 477CC8321FA3B99400DD663D /* Houston macOS */;
+			targetProxy = 477CC83D1FA3B99500DD663D /* PBXContainerItemProxy */;
+		};
+		47D16CC01FA392A60004BAB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47D16CB91FA392A60004BAB6 /* Houston iOS */;
+			targetProxy = 47D16CBF1FA392A60004BAB6 /* PBXContainerItemProxy */;
+		};
+		47EF2B541FA4E8140085D51E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47D16CB91FA392A60004BAB6 /* Houston iOS */;
+			targetProxy = 47EF2B531FA4E8140085D51E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -367,9 +702,11 @@
 		472215A41FA15DC10007641A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,9 +718,11 @@
 		472215A51FA15DC10007641A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,7 +781,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -497,7 +837,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -507,76 +848,271 @@
 			};
 			name = Release;
 		};
-		473FE0561FA146DC00534BB1 /* Debug */ = {
+		477CC7D71FA3ABA500DD663D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.Houston;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Houston;
+				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		477CC7D81FA3ABA500DD663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.Houston;
+				PRODUCT_NAME = Houston;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		477CC7DA1FA3ABA500DD663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.rudybermudez.Houston-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		477CC7DB1FA3ABA500DD663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.rudybermudez.Houston-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		477CC81E1FA3AD5300DD663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.rudybermudez.Houston-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		473FE0571FA146DC00534BB1 /* Release */ = {
+		477CC81F1FA3AD5300DD663D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.Houston;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.rudybermudez.Houston-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		47797AB61FA298FE009F0258 /* Debug */ = {
+		477CC8451FA3B99500DD663D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.rudybermudez.Houston-macOS";
+				PRODUCT_NAME = Houston;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		477CC8461FA3B99500DD663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.rudybermudez.Houston-macOS";
+				PRODUCT_NAME = Houston;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		477CC8481FA3B99500DD663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.rudybermudez.Houston-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		477CC8491FA3B99500DD663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.rudybermudez.Houston-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		47D16CC41FA392A60004BAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.HoustonTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.Houston;
+				PRODUCT_NAME = Houston;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		47797AB71FA298FE009F0258 /* Release */ = {
+		47D16CC51FA392A60004BAB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.HoustonTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.Houston;
+				PRODUCT_NAME = Houston;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		47D16CD11FA392B40004BAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.Houston;
+				PRODUCT_NAME = Houston;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		47D16CD21FA392B40004BAB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.rudybermudez.Houston;
+				PRODUCT_NAME = Houston;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -601,20 +1137,65 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		473FE0551FA146DC00534BB1 /* Build configuration list for PBXNativeTarget "Houston" */ = {
+		477CC7D61FA3ABA500DD663D /* Build configuration list for PBXNativeTarget "Houston tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				473FE0561FA146DC00534BB1 /* Debug */,
-				473FE0571FA146DC00534BB1 /* Release */,
+				477CC7D71FA3ABA500DD663D /* Debug */,
+				477CC7D81FA3ABA500DD663D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47797AB51FA298FE009F0258 /* Build configuration list for PBXNativeTarget "HoustonTests" */ = {
+		477CC7D91FA3ABA500DD663D /* Build configuration list for PBXNativeTarget "Houston tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47797AB61FA298FE009F0258 /* Debug */,
-				47797AB71FA298FE009F0258 /* Release */,
+				477CC7DA1FA3ABA500DD663D /* Debug */,
+				477CC7DB1FA3ABA500DD663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		477CC81D1FA3AD5300DD663D /* Build configuration list for PBXNativeTarget "Houston iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477CC81E1FA3AD5300DD663D /* Debug */,
+				477CC81F1FA3AD5300DD663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		477CC8441FA3B99500DD663D /* Build configuration list for PBXNativeTarget "Houston macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477CC8451FA3B99500DD663D /* Debug */,
+				477CC8461FA3B99500DD663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		477CC8471FA3B99500DD663D /* Build configuration list for PBXNativeTarget "Houston macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477CC8481FA3B99500DD663D /* Debug */,
+				477CC8491FA3B99500DD663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D16CC31FA392A60004BAB6 /* Build configuration list for PBXNativeTarget "Houston iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D16CC41FA392A60004BAB6 /* Debug */,
+				47D16CC51FA392A60004BAB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D16CD01FA392B40004BAB6 /* Build configuration list for PBXNativeTarget "Houston watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D16CD11FA392B40004BAB6 /* Debug */,
+				47D16CD21FA392B40004BAB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

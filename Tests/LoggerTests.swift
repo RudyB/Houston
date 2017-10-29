@@ -84,11 +84,20 @@ class LoggerTests: XCTestCase {
 		
 		Logger.verbose("Test",file: "Some File", function: "Some Function", line: 1)
 	
-		XCTAssertEqual(testDestination.didSendMessage, "Test")
-		XCTAssertEqual(testDestination.didSendFileName, "Some File")
-		XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
-		XCTAssertEqual(testDestination.didSendLineNumber, 1)
-		XCTAssertEqual(testDestination.didSendLevel, LogLevel.verbose)
+		#if DEBUG
+			XCTAssertEqual(testDestination.didSendMessage, "Test")
+			XCTAssertEqual(testDestination.didSendFileName, "Some File")
+			XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
+			XCTAssertEqual(testDestination.didSendLineNumber, 1)
+			XCTAssertEqual(testDestination.didSendLevel, LogLevel.verbose)
+		#else
+			XCTAssertNil(testDestination.didSendMessage)
+			XCTAssertNil(testDestination.didSendFileName)
+			XCTAssertNil(testDestination.didSendFunctionName)
+			XCTAssertNil(testDestination.didSendLineNumber)
+			XCTAssertNil(testDestination.didSendLevel)
+		#endif
+
 	}
 	
 	func testDebugLog() {
@@ -97,11 +106,20 @@ class LoggerTests: XCTestCase {
 		Logger.add(destination: testDestination)
 		
 		Logger.debug("Test",file: "Some File", function: "Some Function", line: 1)
-		XCTAssertEqual(testDestination.didSendMessage, "Test")
-		XCTAssertEqual(testDestination.didSendFileName, "Some File")
-		XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
-		XCTAssertEqual(testDestination.didSendLineNumber, 1)
-		XCTAssertEqual(testDestination.didSendLevel, LogLevel.debug)
+		
+		#if DEBUG
+			XCTAssertEqual(testDestination.didSendMessage, "Test")
+			XCTAssertEqual(testDestination.didSendFileName, "Some File")
+			XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
+			XCTAssertEqual(testDestination.didSendLineNumber, 1)
+			XCTAssertEqual(testDestination.didSendLevel, LogLevel.debug)
+		#else
+			XCTAssertNil(testDestination.didSendMessage)
+			XCTAssertNil(testDestination.didSendFileName)
+			XCTAssertNil(testDestination.didSendFunctionName)
+			XCTAssertNil(testDestination.didSendLineNumber)
+			XCTAssertNil(testDestination.didSendLevel)
+		#endif
 	}
 	
 	func testInfoLog() {
@@ -111,11 +129,19 @@ class LoggerTests: XCTestCase {
 		
 		Logger.info("Test",file: "Some File", function: "Some Function", line: 1)
 		
-		XCTAssertEqual(testDestination.didSendMessage, "Test")
-		XCTAssertEqual(testDestination.didSendFileName, "Some File")
-		XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
-		XCTAssertEqual(testDestination.didSendLineNumber, 1)
-		XCTAssertEqual(testDestination.didSendLevel, LogLevel.info)
+		#if DEBUG
+			XCTAssertEqual(testDestination.didSendMessage, "Test")
+			XCTAssertEqual(testDestination.didSendFileName, "Some File")
+			XCTAssertEqual(testDestination.didSendFunctionName, "Some Function")
+			XCTAssertEqual(testDestination.didSendLineNumber, 1)
+			XCTAssertEqual(testDestination.didSendLevel, LogLevel.info)
+		#else
+			XCTAssertNil(testDestination.didSendMessage)
+			XCTAssertNil(testDestination.didSendFileName)
+			XCTAssertNil(testDestination.didSendFunctionName)
+			XCTAssertNil(testDestination.didSendLineNumber)
+			XCTAssertNil(testDestination.didSendLevel)
+		#endif
 	}
 	
 	func testWarningLog() {
@@ -183,6 +209,7 @@ class LoggerTests: XCTestCase {
 			didSendFunctionName = function
 			didSendLineNumber = line
 			didSendMessage = message
+			
 			return super.acceptLog(level, function: function, file: file, line: line, message: message)
 		}
 

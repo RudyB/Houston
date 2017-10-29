@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "473FE0401FA146DC00534BB1"
+               BlueprintIdentifier = "477CC7C41FA3ABA400DD663D"
                BuildableName = "Houston.framework"
-               BlueprintName = "Houston"
+               BlueprintName = "Houston tvOS"
                ReferencedContainer = "container:Houston.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,16 +27,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47797AAC1FA298FE009F0258"
-               BuildableName = "HoustonTests.xctest"
-               BlueprintName = "HoustonTests"
+               BlueprintIdentifier = "477CC7CC1FA3ABA500DD663D"
+               BuildableName = "Houston tvOSTests.xctest"
+               BlueprintName = "Houston tvOSTests"
                ReferencedContainer = "container:Houston.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "473FE0401FA146DC00534BB1"
+            BlueprintIdentifier = "477CC7C41FA3ABA400DD663D"
             BuildableName = "Houston.framework"
-            BlueprintName = "Houston"
+            BlueprintName = "Houston tvOS"
             ReferencedContainer = "container:Houston.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,9 +66,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "473FE0401FA146DC00534BB1"
+            BlueprintIdentifier = "477CC7C41FA3ABA400DD663D"
             BuildableName = "Houston.framework"
-            BlueprintName = "Houston"
+            BlueprintName = "Houston tvOS"
             ReferencedContainer = "container:Houston.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -85,9 +84,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "473FE0401FA146DC00534BB1"
+            BlueprintIdentifier = "477CC7C41FA3ABA400DD663D"
             BuildableName = "Houston.framework"
-            BlueprintName = "Houston"
+            BlueprintName = "Houston tvOS"
             ReferencedContainer = "container:Houston.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
