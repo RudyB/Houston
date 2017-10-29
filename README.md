@@ -30,7 +30,7 @@ Inspired by [corey-rb](https://github.com/corey-rb)
 - [x] Log Strings & Objects
 - [x] Multiple Output Destinations
 - [x] Formatting Customization
-- [ ] iOS, watchOS, tvOS, macOS Compatability
+- [x] iOS, watchOS, tvOS, macOS Compatability
 - [ ] Log to File
 - [ ] Log to HTTP endpoint
 - [ ] [Complete Documentation](http://cocoadocs.org/docsets/Houston)
