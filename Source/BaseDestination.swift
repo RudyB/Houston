@@ -83,7 +83,7 @@ open class BaseDestination: Hashable {
 	}
 	
 	/// Accepts a log and formats the log data points
-	open func acceptLog(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String? {
+	internal func acceptLog(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String? {
 		switch outputFormat {
 		case .plaintext:
 			return formatLogOutput(level, function: function, file: file, line: line, message: message)

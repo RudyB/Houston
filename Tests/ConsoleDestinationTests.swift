@@ -31,6 +31,12 @@ class ConsoleDestinationTests: XCTestCase {
         let consoleOutput = consoleDest.acceptLog(.verbose, function: "Function", file: "File", line: 10, message: "Should Be Equal")
 
         XCTAssertEqual(baseOutput, consoleOutput)
+		consoleDest.useNSLog = true
+		
+		let consoleOutputUsingNSLOG = consoleDest.acceptLog(.verbose, function: "Function", file: "File", line: 10, message: "Should Be Equal")
+		
+		XCTAssertEqual(baseOutput, consoleOutputUsingNSLOG)
+		
 
     }
 	

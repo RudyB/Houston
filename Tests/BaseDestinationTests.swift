@@ -52,17 +52,17 @@ class BaseDestinationTests: XCTestCase {
 		dest.showDateTime = false
 		output = dest.formatLogOutput(.debug, function: "Function()", file: "/Path/to/file/this.swift", line: 34, message: input)
 
-		XCTAssertEqual(output, "this.Function():34 🔧 Debug: ")
+		XCTAssertEqual(output, "this.Function():34 🔧 DEBUG: ")
 		
 		dest.showFunctionName = false
 		output = dest.formatLogOutput(.debug, function: "Function()", file: "/Path/to/file/this.swift", line: 34, message: input)
 		
-		XCTAssertEqual(output, "this:34 🔧 Debug: ")
+		XCTAssertEqual(output, "this:34 🔧 DEBUG: ")
 		
 		dest.showLineNumber = false
 		output = dest.formatLogOutput(.debug, function: "Function()", file: "/Path/to/file/this.swift", line: 34, message: input)
 		
-		XCTAssertEqual(output, "this 🔧 Debug: ")
+		XCTAssertEqual(output, "this 🔧 DEBUG: ")
 		
 		// Test date format
 		let date = Date()
