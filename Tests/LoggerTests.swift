@@ -36,6 +36,10 @@ class LoggerTests: XCTestCase {
 		let consoleDestination2 = ConsoleDestination()
 		Logger.add(destination: consoleDestination2)
 		XCTAssertEqual(Logger.countDestinations(), 2)
+		
+		let fileDestination = FileDestination()
+		Logger.add(destination: fileDestination)
+		XCTAssertEqual(Logger.countDestinations(), 3)
 	}
 	
 	func testRemoveDesination() {
@@ -189,12 +193,6 @@ class LoggerTests: XCTestCase {
 		XCTAssertEqual(testDestination.didSendMessage, "This should fire")
 	}
 	
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 	
 	private class TestDestination: BaseDestination {
 		var didSendLevel: LogLevel?
