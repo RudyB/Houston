@@ -76,9 +76,10 @@ class FileDestinationTests: XCTestCase {
 	func testDeleteFile() {
 		let dest = FileDestination()
 		
-		let customURL: URL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Test.log", isDirectory: false))!
+		let path = "/tmp/testHouston.log"
+		deleteFile(path: path)
 		
-		dest.logFileURL = customURL
+		dest.logFileURL = URL(string: "file://" + path)!
 		Logger.add(destination: dest)
 		Logger.error("Some Error Message")
 		Logger.warning("Some Warning Message")
@@ -90,10 +91,10 @@ class FileDestinationTests: XCTestCase {
 			let x = sqrt(Double(i))
 			XCTAssertEqual(x, sqrt(Double(i)))
 		}
-		XCTAssertTrue(fileManager.fileExists(atPath: customURL.path))
+		XCTAssertTrue(fileManager.fileExists(atPath: path))
 		
 		let fileDeletionOutput = dest.deleteLogFile()
-		XCTAssertNotEqual(fileDeletionOutput, fileManager.fileExists(atPath: customURL.path))
+		XCTAssertNotEqual(fileDeletionOutput, fileManager.fileExists(atPath: path))
 		
 		dest.logFileURL = nil
 		let output = dest.saveToFile("Should be false")

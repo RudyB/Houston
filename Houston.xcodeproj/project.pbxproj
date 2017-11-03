@@ -10,10 +10,8 @@
 		4704E6EE1FAC066D00AF39F1 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6ED1FAC066D00AF39F1 /* FileDestination.swift */; };
 		4704E6EF1FAC066D00AF39F1 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6ED1FAC066D00AF39F1 /* FileDestination.swift */; };
 		4704E6F01FAC066D00AF39F1 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6ED1FAC066D00AF39F1 /* FileDestination.swift */; };
-		4704E6F11FAC066D00AF39F1 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6ED1FAC066D00AF39F1 /* FileDestination.swift */; };
 		4704E6F31FACC9B800AF39F1 /* FileDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6F21FACC9B800AF39F1 /* FileDestinationTests.swift */; };
 		4704E6F41FACC9B800AF39F1 /* FileDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6F21FACC9B800AF39F1 /* FileDestinationTests.swift */; };
-		4704E6F51FACC9B800AF39F1 /* FileDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6F21FACC9B800AF39F1 /* FileDestinationTests.swift */; };
 		472215971FA15DC10007641A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472215961FA15DC10007641A /* AppDelegate.swift */; };
 		472215991FA15DC10007641A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472215981FA15DC10007641A /* ViewController.swift */; };
 		4722159C1FA15DC10007641A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4722159A1FA15DC10007641A /* Main.storyboard */; };
@@ -638,7 +636,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4704E6F11FAC066D00AF39F1 /* FileDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,7 +643,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4704E6F51FACC9B800AF39F1 /* FileDestinationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1024,7 +1020,6 @@
 		477CC8481FA3B99500DD663D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -1043,7 +1038,6 @@
 		477CC8491FA3B99500DD663D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
