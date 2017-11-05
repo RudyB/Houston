@@ -35,16 +35,34 @@ class BaseDestinationTests: XCTestCase {
 		XCTAssertEqual(output, "ViewController")
 	}
 	
+	func testJSONFormatting() {
+		let dest = BaseDestination()
+		var output = ""
+		dest.outputFormat = .json
+		Logger.add(destination: dest)
+		output = dest.acceptLog(.error, function: "Function", file: "File", line: 12, message: "Error Message")!
+	}
+	
     func testFormatting() {
         let dest = BaseDestination()
 		var output = ""
-		var input = ""
+		let input = ""
 		
 		// Test empty
 		dest.showDateTime = false
 		output = dest.formatLogOutput(.debug, function: "Function()", file: "/Path/to/file/this.swift", line: 34, message: input)
 
-		XCTAssertEqual(output, "this.Function():34 🔧 Debug: ")
+		XCTAssertEqual(output, "this.Function():34 🔧 DEBUG: ")
+		
+		dest.showFunctionName = false
+		output = dest.formatLogOutput(.debug, function: "Function()", file: "/Path/to/file/this.swift", line: 34, message: input)
+		
+		XCTAssertEqual(output, "this:34 🔧 DEBUG: ")
+		
+		dest.showLineNumber = false
+		output = dest.formatLogOutput(.debug, function: "Function()", file: "/Path/to/file/this.swift", line: 34, message: input)
+		
+		XCTAssertEqual(output, "this 🔧 DEBUG: ")
 		
 		// Test date format
 		let date = Date()
@@ -61,12 +79,5 @@ class BaseDestinationTests: XCTestCase {
 		XCTAssertEqual(referenceDate, output)
 		
 	}
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }

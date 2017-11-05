@@ -28,6 +28,11 @@ import Foundation
 
 open class BaseDestination: Hashable {
 	
+	public enum OutputFormat {
+		case json
+		case plaintext
+	}
+	
 	// MARK: - Output Format Configuration
 	
 	/// Show the date and time in the log output
@@ -67,17 +72,25 @@ open class BaseDestination: Hashable {
 	/// The queue of the Output Destination
 	var queue: DispatchQueue?
 	
+	/// The output logger format
+	public var outputFormat = OutputFormat.plaintext
 	
 	// MARK: - Base Methods
 	public init() {
 		let uuid = NSUUID().uuidString
-		let queueLabel = "Juliet-queue-" + uuid
+		let queueLabel = "Houston-queue-" + uuid
 		queue = DispatchQueue(label: queueLabel, target: queue)
 	}
 	
 	/// Accepts a log and formats the log data points
-	open func acceptLog(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String? {
-		return formatLogOutput(level, function: function, file: file, line: line, message: message)
+	internal func acceptLog(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String? {
+		switch outputFormat {
+		case .plaintext:
+			return formatLogOutput(level, function: function, file: file, line: line, message: message)
+		case .json:
+			return formatLogForJSON(level, function: function, file: file, line: line, message: message)
+		}
+		
 	}
 	
 	
@@ -89,37 +102,69 @@ open class BaseDestination: Hashable {
 	
 	/// Formats the log output with the user configurable settings in `Output Format Configuration` section
 	func formatLogOutput(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String {
-		var dateComponent = ""
+
 		var fileName = ""
-		var functionName = ""
-		var lineNumber = ""
-		var levelDescription = ""
-		var emoji = ""
-		
-		if showDateTime {
-			dateComponent = "[\(formatDate(dateFormat))] "
-		}
 		if showFileName {
 			fileName = fileNameOfFileWithoutFileType(file)
 			if showFunctionName {
 				fileName += "."
 			} else {
-				fileName += " "
+				if showLineNumber {
+					fileName += ""
+				} else {
+					fileName += " "
+				}
 			}
 		}
+		
+		let dateComponent = showDateTime ? "[\(formatDate(dateFormat))] " : ""
+		let functionName = showFunctionName ? function : ""
+		let lineNumber = showLineNumber ? ":\(line) " : ""
+		let emoji = showLogLevelEmoji ? "\(level.emoji) " : ""
+		let levelDescription = showLogLevel ? level.description : ""
+
+		return "\(dateComponent)\(fileName)\(functionName)\(lineNumber)\(emoji)\(levelDescription): \(message)"
+		
+	}
+	
+	func formatLogForJSON(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String? {
+		var dict: [String: Any] = [
+			"message": message
+		]
+		
+		if showDateTime {
+			dict["timestamp"] = Date().timeIntervalSince1970
+		}
+		if showFileName {
+			dict["file"] = fileNameOfFileWithoutFileType(file)
+		}
 		if showFunctionName {
-			functionName = function
+			dict["function"] = function
 		}
 		if showLineNumber {
-			lineNumber = ":\(line) "
+			dict["line"] = line
 		}
 		if showLogLevelEmoji {
-			emoji = "\(level.emoji) "
+			dict["emoji"] = level.emoji
 		}
 		if showLogLevel {
-			levelDescription = level.description
+			dict["level"] = level.description
 		}
-		return "\(dateComponent)\(fileName)\(functionName)\(lineNumber)\(emoji)\(levelDescription): \(message)"
+		return jsonStringFromDict(dict)
+	}
+	
+	/// turns dict into JSON-encoded string
+	func jsonStringFromDict(_ dict: [String: Any]) -> String? {
+		var jsonString: String?
+		
+		// try to create JSON string
+		do {
+			let jsonData = try JSONSerialization.data(withJSONObject: dict, options: [])
+			jsonString = String(data: jsonData, encoding: .utf8)
+		} catch {
+			print("Unable to create JSON from dict")
+		}
+		return jsonString
 	}
 	
 	/// Format Date with user defined `dateFormat`

@@ -19,6 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Override point for customization after application launch.
 		
 		let consoleDestination = ConsoleDestination()
+		let fileDestination = FileDestination()
+		
+		let customURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Example.log", isDirectory: false)
+	
+		fileDestination.logFileURL = customURL
+		fileDestination.outputFormat = .json
+		Logger.add(destination: fileDestination)
 		Logger.add(destination: consoleDestination)
 		
 		return true

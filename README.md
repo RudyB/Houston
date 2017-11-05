@@ -30,16 +30,18 @@ Inspired by [corey-rb](https://github.com/corey-rb)
 - [x] Log Strings & Objects
 - [x] Multiple Output Destinations
 - [x] Formatting Customization
-- [x] iOS, watchOS, tvOS, macOS Compatability
-- [ ] Log to File
+- [x] iOS, watchOS, tvOS, macOS compatibility
+- [x] Log to File
 - [ ] Log to HTTP endpoint
 - [ ] [Complete Documentation](http://cocoadocs.org/docsets/Houston)
 
 
 ## Requirements
 * Xcode 8.3+
-* iOS 10.3+
-* Swift 3.1+
+* iOS 8.0+
+* watchOS 2.0+
+* macOS 10.10+
+* Swift 4.0+
 
 
 ## Installation

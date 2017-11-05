@@ -37,7 +37,7 @@ public class ConsoleDestination: BaseDestination {
 	}
 	
 	/// Accepts the log and Outputs the details to the Console
-	override public func acceptLog(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String? {
+	override func acceptLog(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String? {
 		let formattedString = super.acceptLog(level, function: function, file: file, line: line, message: message)
 		if let str = formattedString {
 			if useNSLog {

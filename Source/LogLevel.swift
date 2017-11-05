@@ -40,15 +40,15 @@ public enum LogLevel: Int, CustomStringConvertible {
 	public var description: String {
 		switch self {
 		case .verbose:
-			return "Verbose"
+			return "VERBOSE"
 		case .debug:
-			return "Debug"
+			return "DEBUG"
 		case .info:
-			return "Info"
+			return "INFO"
 		case .warning:
-			return "Warning"
+			return "WARNING"
 		case .error:
-			return "Error"
+			return "ERROR"
 		default:
 			assertionFailure("Invalid Log Level")
 			return "NULL"

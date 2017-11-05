@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4704E6EE1FAC066D00AF39F1 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6ED1FAC066D00AF39F1 /* FileDestination.swift */; };
+		4704E6EF1FAC066D00AF39F1 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6ED1FAC066D00AF39F1 /* FileDestination.swift */; };
+		4704E6F01FAC066D00AF39F1 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6ED1FAC066D00AF39F1 /* FileDestination.swift */; };
+		4704E6F31FACC9B800AF39F1 /* FileDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6F21FACC9B800AF39F1 /* FileDestinationTests.swift */; };
+		4704E6F41FACC9B800AF39F1 /* FileDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704E6F21FACC9B800AF39F1 /* FileDestinationTests.swift */; };
 		472215971FA15DC10007641A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472215961FA15DC10007641A /* AppDelegate.swift */; };
 		472215991FA15DC10007641A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472215981FA15DC10007641A /* ViewController.swift */; };
 		4722159C1FA15DC10007641A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4722159A1FA15DC10007641A /* Main.storyboard */; };
@@ -87,6 +92,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4704E6ED1FAC066D00AF39F1 /* FileDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDestination.swift; sourceTree = "<group>"; };
+		4704E6F21FACC9B800AF39F1 /* FileDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDestinationTests.swift; sourceTree = "<group>"; };
 		472215941FA15DC10007641A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		472215961FA15DC10007641A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		472215981FA15DC10007641A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +248,7 @@
 				47797AB81FA2995A009F0258 /* LoggerTests.swift */,
 				473FE0701FA1489000534BB1 /* Info.plist */,
 				4764311B1FA2B03E00818CC3 /* ConsoleDestinationTests.swift */,
+				4704E6F21FACC9B800AF39F1 /* FileDestinationTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -259,6 +267,7 @@
 			children = (
 				47C047C11FA15AA800225F93 /* BaseDestination.swift */,
 				47C047BF1FA15AA800225F93 /* ConsoleDestination.swift */,
+				4704E6ED1FAC066D00AF39F1 /* FileDestination.swift */,
 			);
 			name = Destinations;
 			sourceTree = "<group>";
@@ -474,10 +483,12 @@
 					};
 					477CC8321FA3B99400DD663D = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					477CC83A1FA3B99500DD663D = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					47D16CB91FA392A60004BAB6 = {
@@ -594,6 +605,7 @@
 				477CC7FF1FA3AC3400DD663D /* ConsoleDestination.swift in Sources */,
 				477CC7F81FA3AC2900DD663D /* Logger.swift in Sources */,
 				477CC7FA1FA3AC2D00DD663D /* LogLevel.swift in Sources */,
+				4704E6F01FAC066D00AF39F1 /* FileDestination.swift in Sources */,
 				477CC7FC1FA3AC3000DD663D /* BaseDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +616,7 @@
 			files = (
 				477CC82C1FA3ADE100DD663D /* ConsoleDestinationTests.swift in Sources */,
 				477CC8291FA3ADDC00DD663D /* LoggerTests.swift in Sources */,
+				4704E6F41FACC9B800AF39F1 /* FileDestinationTests.swift in Sources */,
 				477CC8261FA3ADD800DD663D /* BaseDestinationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +627,7 @@
 			files = (
 				477CC82B1FA3ADE000DD663D /* ConsoleDestinationTests.swift in Sources */,
 				477CC8281FA3ADDB00DD663D /* LoggerTests.swift in Sources */,
+				4704E6F31FACC9B800AF39F1 /* FileDestinationTests.swift in Sources */,
 				477CC8251FA3ADD700DD663D /* BaseDestinationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,6 +653,7 @@
 				47D16CF91FA393170004BAB6 /* ConsoleDestination.swift in Sources */,
 				47D16CED1FA393080004BAB6 /* Logger.swift in Sources */,
 				47D16CF11FA3930E0004BAB6 /* LogLevel.swift in Sources */,
+				4704E6EE1FAC066D00AF39F1 /* FileDestination.swift in Sources */,
 				47D16CF51FA393130004BAB6 /* BaseDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,6 +665,7 @@
 				47D16CFA1FA393180004BAB6 /* ConsoleDestination.swift in Sources */,
 				47D16CEE1FA393090004BAB6 /* Logger.swift in Sources */,
 				47D16CF21FA3930E0004BAB6 /* LogLevel.swift in Sources */,
+				4704E6EF1FAC066D00AF39F1 /* FileDestination.swift in Sources */,
 				47D16CF61FA393130004BAB6 /* BaseDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -955,6 +971,7 @@
 		477CC8451FA3B99500DD663D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -971,6 +988,7 @@
 				PRODUCT_NAME = Houston;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -978,6 +996,7 @@
 		477CC8461FA3B99500DD663D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1001,6 +1020,7 @@
 		477CC8481FA3B99500DD663D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1010,6 +1030,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.rudybermudez.Houston-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1017,6 +1038,7 @@
 		477CC8491FA3B99500DD663D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
