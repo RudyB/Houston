@@ -25,13 +25,16 @@
 
 import Foundation
 
+/// Handles outputting logs to the console
 public class ConsoleDestination: BaseDestination {
 	
 	/// Use NSLog instead of print
 	public var useNSLog = false
 	
+	/// Hash value used for Hashable protocol
 	override public var defaultHashValue: Int { return 1 }
 	
+	/// Default Initializer
 	public override init() {
 		super.init()
 	}

@@ -25,18 +25,32 @@
 
 import Foundation
 
-/// Log Level used in Juliet Logger
+/// Log Level used in Houston Logger
 public enum LogLevel: Int, CustomStringConvertible {
 	// Int defines Log Level Precedence
+	
+	/// Log all levels
 	case all = 0
+	
+	/// Log verbose level and higher
 	case verbose = 1
+	
+	/// Log debug level and higher
 	case debug = 2
+	
+	/// Log info level and higher
 	case info = 3
+	
+	/// Log warning level and higher
 	case warning = 4
+	
+	/// Log error level and higher
 	case error = 5
+	
+	/// No not log
 	case none = 6
 	
-	/// Description of Log Level
+	/// Human-Readable description of Log Level
 	public var description: String {
 		switch self {
 		case .verbose:
@@ -78,8 +92,10 @@ public enum LogLevel: Int, CustomStringConvertible {
 	/// `LogLevel.all` if in Debug
 	/// `LogLevel.warning` if in Production
 	#if DEBUG
+	/// The default logging level in DEBUG is `all`
 	static public let defaultLevel = LogLevel.all
 	#else
+	/// The default logging level in RELEASE is `warning`
 	static public let defaultLevel = LogLevel.warning
 	#endif
 }

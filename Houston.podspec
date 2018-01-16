@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Houston'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A lightweight logger in Swift for iOS'
   s.description      = <<-DESC
 Houston is a lightweight logger in Swift.

@@ -26,10 +26,16 @@
 
 import Foundation
 
+/// Generic Log Output Destination Model
 open class BaseDestination: Hashable {
 	
+	/// Denotes the format of the log
 	public enum OutputFormat {
+		
+		/// Log in JSON format
 		case json
+		
+		/// Log in plaintext format
 		case plaintext
 	}
 	
@@ -76,6 +82,8 @@ open class BaseDestination: Hashable {
 	public var outputFormat = OutputFormat.plaintext
 	
 	// MARK: - Base Methods
+	
+	/// Default Initializer. Creates new `DispatchQueue`
 	public init() {
 		let uuid = NSUUID().uuidString
 		let queueLabel = "Houston-queue-" + uuid
@@ -126,7 +134,7 @@ open class BaseDestination: Hashable {
 		return "\(dateComponent)\(fileName)\(functionName)\(lineNumber)\(emoji)\(levelDescription): \(message)"
 		
 	}
-	
+	/// Formats the log output with the user configurable settings in `Output Format Configuration` section for JSON
 	func formatLogForJSON(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String? {
 		var dict: [String: Any] = [
 			"message": message
@@ -206,9 +214,12 @@ open class BaseDestination: Hashable {
 	}
 	
 	// MARK: - Hashable and Equitable
+	/// Hash value used for Hashable protocol
 	lazy public var hashValue: Int = self.defaultHashValue
+	/// Hash value used for Hashable protocol
 	open var defaultHashValue: Int {return 0}
 	
+	/// Used for Equitable protocol
 	public static func ==(lhs: BaseDestination, rhs: BaseDestination) -> Bool {
 		return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
 	}

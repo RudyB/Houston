@@ -8,14 +8,23 @@
 
 import Foundation
 
+/// Handles outputting logs to a file
 public class FileDestination: BaseDestination {
 	
+	/// The `URL` of the file where the log will be saved
 	public var logFileURL: URL?
 	
+	/// Hash value used for Hashable protocol
 	override public var defaultHashValue: Int {return 2}
+	
+	/// Default instance of FileManager
 	let fileManager = FileManager.default
+	
+	/// Shared FileHandler used for writing to file
 	var fileHandle: FileHandle?
 	
+	
+	/// Default Initializer sets `logFileURL`
 	public override init() {
 		var baseURL: URL?
 		#if os(OSX)
@@ -47,6 +56,16 @@ public class FileDestination: BaseDestination {
 		super.init()
 	}
 	
+	
+	/// Accept log and write formatted string to file
+	///
+	/// - Parameters:
+	///   - level: the `LogLevel`
+	///   - function: the function of the caller
+	///   - file: the file of the caller
+	///   - line: the line number of the caller
+	///   - message: the log message
+	/// - Returns: The formatted string that was sent to the destination
 	override func acceptLog(_ level: LogLevel, function: String, file: String, line: Int, message: String) -> String? {
 		let formattedString = super.acceptLog(level, function: function, file: file, line: line, message: message)
 		
@@ -57,6 +76,11 @@ public class FileDestination: BaseDestination {
 		return formattedString
 	}
 	
+	
+	/// Save a message to a `logFileURL`
+	///
+	/// - Parameter message: the message to write to the file
+	/// - Returns: true if message successfully written to file, false otherwise
 	func saveToFile(_ message: String) -> Bool {
 		guard let url = logFileURL else { return false }
 		do {
@@ -86,8 +110,9 @@ public class FileDestination: BaseDestination {
 		}
 	}
 	
-	/// deletes log file.
-	/// returns true if file was removed or does not exist, false otherwise
+	/// Delete log file.
+	///
+	/// - Returns: true if file was removed or does not exist, false otherwise
 	public func deleteLogFile() -> Bool {
 		guard let url = logFileURL, fileManager.fileExists(atPath: url.path) == true else { return true }
 		do {

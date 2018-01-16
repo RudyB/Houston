@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Houston  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Houston  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Houston Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Houston Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Houston  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/BaseDestination.html">BaseDestination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BaseDestination/OutputFormat.html">– OutputFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ConsoleDestination.html">ConsoleDestination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FileDestination.html">FileDestination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Logger.html">Logger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/LogLevel.html">LogLevel</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p align="center">
+  <img src="https://imgur.com/RBbeVa2.png"/>
+</p>
+
+<p><a href="https://travis-ci.org/RudyB/Houston"><img src="https://travis-ci.org/RudyB/Houston.svg?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/github/RudyB/Houston?branch=master"><img src="https://coveralls.io/repos/github/RudyB/Houston/badge.svg?branch=master" alt="Coverage Status"></a>
+<a href="https://cocoapods.org/pods/Houston"><img src="https://img.shields.io/cocoapods/v/Houston.svg" alt="CocoaPods Compatible"></a>
+<a href="https://cocoapods.org/pods/Houston"><img src="https://img.shields.io/cocoapods/dt/Houston.svg" alt="CocoaPods"></a>
+<a href="https://cocoapods.org/pods/Houston"><img src="https://img.shields.io/cocoapods/at/Houston.svg" alt="CocoaPods"></a>
+<a href="https://cocoapods.org/pods/Houston"><img src="https://img.shields.io/cocoapods/p/Houston.svg?style=flat" alt="Platforms"></a>
+<a href="https://cocoapods.org/pods/Houston"><img src="http://img.shields.io/badge/swift-4.0-brightgreen.svg" alt="Swift"></a>
+<a href="#license"><img src="https://img.shields.io/cocoapods/l/Houston.svg?style=flat" alt="License"></a></p>
+
+<p>Houston is a simple, lightweight logging library for iOS. It is meant to allow easy logging of application data to multiple endpoints (console, stdout, http, etc).
+Inspired by <a href="https://github.com/corey-rb">corey-rb</a></p>
+
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#output">Output</a></li>
+<li><a href="#contribute">Contribute</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>[x] Single Setup</li>
+<li>[x] Log Strings &amp; Objects</li>
+<li>[x] Multiple Output Destinations</li>
+<li>[x] Formatting Customization</li>
+<li>[x] iOS, watchOS, tvOS, macOS compatibility</li>
+<li>[x] Log to File</li>
+<li>[ ] Log to HTTP endpoint</li>
+<li>[ ] <a href="http://cocoadocs.org/docsets/Houston">Complete Documentation</a></li>
+</ul>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>Xcode 8.3+</li>
+<li>iOS 8.0+</li>
+<li>watchOS 2.0+</li>
+<li>macOS 10.10+</li>
+<li>Swift 4.0+</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>To integrate Houston into your project, add the following to your project&rsquo;s Podfile</p>
+
+<p><code>pod &#39;Houston&#39;</code></p>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p>Coming Soon.</p>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>Coming Soon.</p>
+
+<p><a name="usage"></a></p>
+<h2 id='basic-usage-quick-start' class='heading'>Basic Usage (Quick Start)</h2>
+
+<p>In each source file,</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Houston</span>
+</code></pre>
+
+<p>In your AppDelegate (or other global file), configure log destinations</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">consoleDestination</span> <span class="o">=</span> <span class="kt">ConsoleDestination</span><span class="p">()</span>
+<span class="kt">Logger</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">destination</span><span class="p">:</span> <span class="n">consoleDestination</span><span class="p">)</span>
+</code></pre>
+<h3 id='basic-logging' class='heading'>Basic Logging</h3>
+
+<p>You can log just about anything.</p>
+
+<p>You can log simple strings:</p>
+<pre class="highlight swift"><code><span class="kt">Logger</span><span class="o">.</span><span class="nf">verbose</span><span class="p">(</span><span class="s">"View Loaded"</span><span class="p">)</span>
+<span class="kt">Logger</span><span class="o">.</span><span class="nf">warning</span><span class="p">(</span><span class="s">"Yikes something is not right"</span><span class="p">)</span>
+<span class="kt">Logger</span><span class="o">.</span><span class="nf">error</span><span class="p">(</span><span class="s">"Fatal Error"</span><span class="p">)</span>
+</code></pre>
+
+<p>Or you can log objects:</p>
+<pre class="highlight swift"><code><span class="kt">Logger</span><span class="o">.</span><span class="nf">info</span><span class="p">(</span><span class="kt">Date</span><span class="p">())</span>
+<span class="kt">Logger</span><span class="o">.</span><span class="nf">debug</span><span class="p">([</span><span class="s">"Yellow"</span><span class="p">,</span> <span class="s">"Blue"</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</code></pre>
+<h2 id='output' class='heading'>Output</h2>
+
+<p><img src="https://imgur.com/0orGsD3.png" width="600px"/></p>
+<h2 id='contribute' class='heading'>Contribute</h2>
+
+<p>Want to learn Swift and help contribute? <a href="https://github.com/RudyB/Houston/blob/master/CONTRIBUTING.md">Read Here</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>Houston is released under the MIT license. <a href="https://github.com/RudyB/Houston/blob/master/LICENSE">See LICENSE</a> for details.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/RudyB/Houston" target="_blank" rel="external">RudyB</a>. All rights reserved. (Last updated: 2018-01-16)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
