@@ -25,9 +25,10 @@
 
 import Foundation
 
+/// High-level class that handles logging
 open class Logger {
 	
-	/// The Set of destinations to output the log
+	/// The `Set` of destinations to output the log
 	private static var destinations = Set<BaseDestination>()
 	
 	/// Enables the logger
