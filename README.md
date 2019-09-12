@@ -44,7 +44,7 @@ Inspired by [corey-rb](https://github.com/corey-rb)
 * iOS 8.0+
 * watchOS 2.0+
 * macOS 10.10+
-* Swift 4.0+
+* Swift 5.0+
 
 
 ## Installation

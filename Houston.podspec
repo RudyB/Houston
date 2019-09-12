@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Houston'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'A lightweight logger in Swift for iOS'
   s.description      = <<-DESC
 Houston is a lightweight logger in Swift.
@@ -10,7 +10,7 @@ Houston is a lightweight logger in Swift.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'RudyB' => 'hello@rudybermudez.io' }
   s.source           = { :git => 'https://github.com/RudyB/Houston.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/RudyB__'
+  s.social_media_url = 'https://twitter.com/RudyBermudez'
 
   s.ios.deployment_target = '8.0'
   s.watchos.deployment_target = "2.0"
