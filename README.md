@@ -9,7 +9,7 @@
 [![CocoaPods](https://img.shields.io/cocoapods/dt/Houston.svg)](https://cocoapods.org/pods/Houston)
 [![CocoaPods](https://img.shields.io/cocoapods/at/Houston.svg)](https://cocoapods.org/pods/Houston)
 [![Platforms](https://img.shields.io/cocoapods/p/Houston.svg?style=flat)](https://cocoapods.org/pods/Houston)
-[![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)](https://cocoapods.org/pods/Houston)
+[![Swift](http://img.shields.io/badge/swift-5.0-brightgreen.svg)](https://cocoapods.org/pods/Houston)
 [![License](https://img.shields.io/cocoapods/l/Houston.svg?style=flat)](#license)
 
 
